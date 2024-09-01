@@ -1,0 +1,44 @@
+* {
+    font-size: 12pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 8% 15%;
+}
+
+/* header */
+
+h1 {
+    margin: 4px;
+    text-align: center;
+}
+
+h2 {
+    margin: 4px;
+    text-align: end;
+}
+
+#pset-name {
+    padding-bottom: 10px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+/* question section */
+
+.questions-container {
+    list-style-type: decimal;
+    padding: 0px;
+}
+
+li {
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
