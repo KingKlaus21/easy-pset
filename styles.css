@@ -64,5 +64,25 @@ textarea {
 
     max-height: 210px;
     /* width: 540px; */
-
 }
+
+/* below is for span text block */
+  
+  .text-insert[contenteditable]:empty::before {
+    content: "Placeholder still possible";
+    color: gray;
+  }
+
+  .text-insert {
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1px 6px;
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
+  }
