@@ -24,16 +24,27 @@
                 as reported by Apple.com, along with the app type, for June 2014.</li>
 
             <img>
-
+          
             <ol>
                 <li>Construct a frequency and relative frequency distribution for the app type.</li>
-                <label for="1a">Choose file to upload</label>
-                <input type="file" id="1a" name="1a" accept=".jpg, .jpeg, .png"/>
-                <img id="1a">
+                <div class="container">
+                    <h1>Select an Image</h1>
+                    <input type="file" id="fileInput" accept="image/*">
+                    <div class="image-container">
+                        <img id="previewImage" alt="Selected Image will appear here">
+                    </div>
+                </div>
 
                 <li>What is the most popular app type in the top 20 list of most downloaded
                     free apps?</li>
-                <textarea class="text-insert" name="text-insert"></textarea>
+
+                <textarea id="1b" class="text-insert" name="text-insert"></textarea>
+                <!-- HERE -->
+                <h1 class="userName"></h1>
+                <input type="text" class="name" placeholder="Enter name here">
+                <button class="saveNameBtn">Save Name</button>
+                <!-- HERE -->
+
 
                 <li>Construct a bar graph of the relative frequencies. Write a brief sentence
                     summarizing what the graph shows.</li>
@@ -209,6 +220,42 @@
         
     </ol>
 
+
+    <script src="script.js"></script>
+
     
 </body>
 </html>
+
+
+<!-- 
+    MAIN things i want added:
+
+    - adding a file shows the image associated with it
+    - print button that shows website being printed AND sections
+    everything off nice for the graders
+    - download button too
+
+    ---------------------------------------------------------------
+
+    HELPFUL things I want added (that I can probably do):
+
+    - text boxes resize as you type AND accomodate pasting as well
+
+    ---------------------------------------------------------------
+
+    QUALITY OF LIFE things I want added (but may be time consuming):
+
+    - menu to drag stats items over and drop them in a box so you can
+    show math quickly
+
+    ---------------------------------------------------------------
+
+    EXTRA things I also want added (but are insanely complicated):
+
+    - saves data per session so it doesnt get wiped
+    - way for Jacob to build psets on here in one place
+
+
+
+ -->
