@@ -31,15 +31,23 @@ else {
 document.addEventListener("DOMContentLoaded", () => {
     const userNameText = document.querySelector(".userName");
     const saveNameButton = document.querySelector(".saveNameBtn");
+    const nameInput = document.querySelector(".name");
+
+    // Check if elements are correctly selected
+    console.log("userNameText:", userNameText);
+    console.log("saveNameButton:", saveNameButton);
+    console.log("nameInput:", nameInput);
 
     saveNameButton.addEventListener("click", () => {
-        const userName = document.querySelector(".name").value;
+        const userName = nameInput.value;
+        console.log("Entered name:", userName);  // Check the entered name
         userNameText.textContent = userName;
         localStorage.setItem("name", userName);
     });
 
     function displayUserName() {
         const nameFromLocalStorage = localStorage.getItem("name");
+        console.log("Name from localStorage:", nameFromLocalStorage);  // Check local storage value
 
         if (nameFromLocalStorage) {
             userNameText.textContent = nameFromLocalStorage;
@@ -50,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     displayUserName();
 });
+
 
 
 
